@@ -12,6 +12,9 @@ var Panel = React.createClass({
     }
 });
 
+
+
+
 var PanelHead = React.createClass({
     render:function(){
         return <div className="panel-heading">
@@ -35,8 +38,10 @@ var PanelFooter = React.createClass({
         </div>
     }
 });
+
+
 //单向数据流 数据以属性的方式从上而下依次传递
 ReactDOM.render(
     <Panel head="头" body="体" footer="尾">
 
-</Panel>,document.querySelector('#app'));
+    </Panel>,document.querySelector('#app'));
