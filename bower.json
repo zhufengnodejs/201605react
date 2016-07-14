@@ -1,0 +1,21 @@
+{
+  "name": "201605react",
+  "authors": [
+    "zhufengnodejs <zhufengnodejs@126.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "babel": "*",
+    "react": "^15.2.1"
+  }
+}
