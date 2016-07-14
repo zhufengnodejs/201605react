@@ -4,8 +4,9 @@
 
 var Panel = React.createClass({
     render:function(){
+        var xxx = 'd';
         return <div className="panel panel-success">
-                <PanelHead head={this.props.head}></PanelHead>
+                <PanelHead head={xxx}></PanelHead>
                 <PanelBody body={this.props.body}></PanelBody>
                 <PanelFooter footer={this.props.footer}></PanelFooter>
         </div>
