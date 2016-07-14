@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="reset()" value="重置">
+</body>
+<script>
+    function reset(){
+        //把本地缓存中的值全部删除
+        localStorage.clear();
+    }
+    //取得原来存储的visit的值  也就访问量
+    var visit = localStorage.getItem('visit');
+    //如果有值表示写入过visit,那么则累加
+    if(visit){
+        localStorage.setItem('visit',''+(parseInt(visit)+1));
+    }else{
+        visit = '1';
+        //设置的值只能有一种类型，就是字符串
+        localStorage.setItem('visit',visit);
+    }
+    document.write('这是你第'+visit+'次访问此页面');
+</script>
+</html>
